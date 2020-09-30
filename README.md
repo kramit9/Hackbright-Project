@@ -11,7 +11,7 @@ Audio features are extracted using signal processing and Mel Frequency Cepstral 
 #####(dynamic.py)
 After the features for the voiceprint and the test audio are extracted, they are compared to each other using Dynamic Time Warping. The output of this step is a number that represents how similar the two sets of features are. The closer the number is to zero, the more similar the features. After multiple tests, a base number is selected which determines whether or not a test audio is a match.
 
-###Web App
+### Web App
 #####(app.py, recorder.js, recorder.html)
 Currently, the user is able to record his or her voice in the browser. The test audio is then saved temporarily and tested against my password. This portion utilizes Python, Flask, HTML5, Bootstrap, JavaScript, AJAX, and the navigator.getUserMedia() API.
 
